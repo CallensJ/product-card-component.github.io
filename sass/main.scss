@@ -1,0 +1,111 @@
+//COLOR VARIABLES
+
+
+//primary color
+$primary-color-dark-cyan: #3c8067;
+$primary-color-cream: #f2ebe3;
+
+//secondary color
+$secondary-color-dark-blue: #1c232b;
+$secondary-color-gravish-blue: #6c7289;
+$secondary-color-white: #ffffff;
+
+//fonts
+
+$primary-font: 'Montserrat', sans-serif;
+$secondary-font: 'Fraunces', serif;
+
+//Genaral Setup
+
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    
+    
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: $primary-color-cream;
+
+}
+
+.container{
+    display: flex;
+    width: 800px;
+    height: auto;
+
+    .left-side{
+        width: 400px;
+        height: 550px;
+    
+
+        .image{
+            width: 400px;
+            height: 550px;
+            object-fit: cover;
+            
+        }
+    }
+
+    .right-side{
+        display: flex;
+        flex-direction: column;
+        padding: 5rem;
+        background-color:$secondary-color-white;
+        height: 550px;
+
+
+        .title{
+            font-family: 'Montserrat';
+            font-size: 1.4rem;
+            color: $secondary-color-gravish-blue;
+            letter-spacing: 0.8rem;
+        }
+
+        .product-title{
+
+            font-size: 2rem;
+            font-family: Fraunces, sans-serif;
+            font-weight: 700;
+            line-height: 4rem;
+            margin-top: 2rem;
+        }
+        .text{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.4rem;
+            color: $secondary-color-gravish-blue;
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+            padding-right: 60px;
+            line-height: 2.5rem;  
+            
+            
+        }
+
+        .pricing{
+            color: $primary-color-dark-cyan;
+            font-size: 3rem;
+            font-weight: 700;
+            font-family: Fraunces, sans-serif;
+        }
+
+
+        .btn{
+            background-color: $primary-color-dark-cyan;
+            color: $secondary-color-white;
+            border-radius: 15px;
+            padding: 1rem 2rem;
+            font-weight: bold;
+        }
+    }
+}

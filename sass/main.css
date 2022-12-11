@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f2ebe3;
+}
+
+.container {
+  display: flex;
+  width: 800px;
+  height: auto;
+}
+.container .left-side {
+  width: 400px;
+  height: 550px;
+}
+.container .left-side .image {
+  width: 400px;
+  height: 550px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container .right-side {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+  background-color: #ffffff;
+  height: 550px;
+}
+.container .right-side .title {
+  font-family: "Montserrat";
+  font-size: 1.4rem;
+  color: #6c7289;
+  letter-spacing: 0.8rem;
+}
+.container .right-side .product-title {
+  font-size: 2rem;
+  font-family: Fraunces, sans-serif;
+  font-weight: 700;
+  line-height: 4rem;
+  margin-top: 2rem;
+}
+.container .right-side .text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  color: #6c7289;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  padding-right: 60px;
+  line-height: 2.5rem;
+}
+.container .right-side .pricing {
+  color: #3c8067;
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: Fraunces, sans-serif;
+}
+.container .right-side .btn {
+  background-color: #3c8067;
+  color: #ffffff;
+  border-radius: 15px;
+  padding: 1rem 2rem;
+  font-weight: bold;
+}/*# sourceMappingURL=main.css.map */
