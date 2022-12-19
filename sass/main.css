@@ -36,8 +36,8 @@ body {
   flex-direction: column;
   background-color: #ffffff;
   height: auto;
-  max-width: 450px;
-  width: 350px;
+  max-width: 400px;
+  width: 400px;
 }
 .container .right-side #content {
   padding: 3rem;
@@ -45,7 +45,7 @@ body {
 }
 .container .right-side #content .title {
   font-family: "Montserrat";
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: #6c7289;
   letter-spacing: 0.8rem;
 }
@@ -63,7 +63,7 @@ body {
   color: #6c7289;
   margin-top: 2rem;
   margin-bottom: 3rem;
-  padding-right: 8rem;
+  padding-right: 5rem;
   line-height: 2.5rem;
 }
 .container .right-side #content .pricing {
@@ -76,6 +76,12 @@ body {
   font-size: 3rem;
   font-weight: 700;
   font-family: Fraunces, sans-serif;
+  margin-right: 2rem;
+}
+.container .right-side #content .before-price {
+  color: #6c7289;
+  text-decoration: line-through;
+  font-size: 1.2rem;
 }
 .container .right-side #content .btn {
   background-color: #3c8067;
@@ -84,6 +90,48 @@ body {
   padding: 1.5rem 0;
   margin-top: 3rem;
   font-weight: bold;
+  border: none;
   max-width: 100%;
   width: 100%;
+  position: relative;
+}
+.container .right-side #content .btn:hover {
+  background-color: #1c232b;
+}
+.container .right-side #content .btn .cart-icon {
+  position: absolute;
+  left: 8rem;
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    max-width: 375px;
+    height: auto;
+  }
+  .container .left-side {
+    max-width: 375px;
+    height: auto;
+  }
+  .container .left-side .image {
+    max-width: 375px;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  .container .right-side {
+    max-width: 375px;
+  }
+  .container .right-side #content .product-title {
+    padding-right: 1rem;
+  }
+  .container .right-side #content .text {
+    padding-right: 0rem;
+  }
+  .container .right-side #content .btn .cart-icon {
+    left: 9rem;
+  }
 }/*# sourceMappingURL=main.css.map */
